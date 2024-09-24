@@ -35,7 +35,6 @@ nav ul{
     justify-content: center;
 }
 
-
 nav ul li{
     margin: 0 15px;
 }
@@ -53,5 +52,11 @@ nav ul li a:hover {
 /*Selector de tipo clase*/
 .estilo{
     background-color: aliceblue;
+    padding: 20px;
+    margin: 20px 0; /* 10px left y rigth, 0 top y bottom*/
+    transition: background-color 0.3s ease;
 }
 
+.estilo:hover{ /*Animacion de background color*/
+    background-color: rgb(181, 221, 255);
+}
