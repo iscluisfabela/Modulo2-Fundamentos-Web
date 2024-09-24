@@ -60,3 +60,41 @@ nav ul li a:hover {
 .estilo:hover{ /*Animacion de background color*/
     background-color: rgb(181, 221, 255);
 }
+.cta-button{
+    background-color: rgb(254, 208, 115);
+    color:rgb(127, 9, 9);
+    padding: 10px 2px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.cta-button:hover {
+    background-color:orangered;
+    color:white;
+}
+
+/* Estilos al contenedor de las tarjetas*/
+.menu-contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.card{
+    background-color: bisque;
+    border-bottom: 10px;
+    width: 250px;
+    margin: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
