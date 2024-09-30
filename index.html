@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>E-WIT</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Agregar icono en pestaña de pagina -->
+    <link rel="icon" href="/Modulo2-Fundamentos-Web/imagenes/favicon.ico" type="image/x-icon">
+    <!-- Incluye el CSS de Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!--Enlazando con CSS-->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    
+     
 </head>
 <body>
+    <header>
+        <div class="contenedor">
+            <h2>Soluciones de tecnologia a tu alcance</h2>
+            <nav>
+                <ul>    
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="">Computadoras</a></li>
+                    <li><a href="">Impresoras</a></li>
+                    <li><a href="">Videovigilancia</a></li>
+                    <li><a href="">Accesorios</a></li>
+                    <li><a href="">Punto de Venta</a></li>
+                </ul>
+            </nav>
+            <img id="logo" src="/imagenes/logo.png">
+        </div>
+    </header>
     <main>
-        <header>
-            <div class="contenedor">
-                <h1>Huaraches Lechuga 🥬</h1>
-                <nav>
-                    <ul> <!--Lista desordenada-->
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Nuestra historia</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Personal</a></li>
-                        <li><a href="">Redes Sociales</a></li>
-                    </ul>
-                </nav>
+        <section class="estilo" id="Inicio">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                        <div class="article-container" id="EQC"></div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="article-container" id="POS"></div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="article-container" id="PRINTER"></div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="article-container" id="CCTV"></div>
+                    </div>
+                </div>
+                <!-- Controles de navegación -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-        </header>
 
-        <section class="estilo" id="home">
-            <h2>Bienvenidos/as al mejor restaurante de Huaraches</h2>
-            <p>Disfruta de la mejor comida mexicana</p>
+            <h2>Aquí encontrarás lo que necesitas ...</h2>
+            <p>SI tienes dudas contactanos</p>
             <button class="cta-button">Reserva ahora</button>
         </section>
-
-        <section class="estilo" id="nuestra-historia">
+        <section class="estilo" id="Computadoras">
             <h2>Nuestra Historia</h2>
         </section>
 
-        <section class="estilo" id="menu">
+        <section class="estilo" id="Impresoras">
             <h2>Menu:</h2>
             <p>Sabores tradicionales:</p>
 
@@ -49,7 +76,16 @@
                     <h3>Huarache Tradicional</h3>
                     <p>$70</p>
                 </div>
-
+                <div class="card">
+                    <img src="https://lh4.googleusercontent.com/proxy/pw6i1wKb-qyD7dFbcRWBLeFbSNpnkeesC1JESwp1CQspEpabH7JmUrb5S05l0Ax_yZJMYY2HqEtU7UonBt0_2JbbsDeF_mj_5vEvaQ9Zx7RezNYpW-qOo1dHpe7Wsg" alt="Foto de nuestro huarache tradicional.">
+                    <h3>Huarache Tradicional</h3>
+                    <p>$70</p>
+                </div>
+                <div class="card">
+                    <img src="https://lh4.googleusercontent.com/proxy/pw6i1wKb-qyD7dFbcRWBLeFbSNpnkeesC1JESwp1CQspEpabH7JmUrb5S05l0Ax_yZJMYY2HqEtU7UonBt0_2JbbsDeF_mj_5vEvaQ9Zx7RezNYpW-qOo1dHpe7Wsg" alt="Foto de nuestro huarache tradicional.">
+                    <h3>Huarache Tradicional</h3>
+                    <p>$70</p>
+                </div>
                 <div class="card">
                     <img src="https://lh4.googleusercontent.com/proxy/pw6i1wKb-qyD7dFbcRWBLeFbSNpnkeesC1JESwp1CQspEpabH7JmUrb5S05l0Ax_yZJMYY2HqEtU7UonBt0_2JbbsDeF_mj_5vEvaQ9Zx7RezNYpW-qOo1dHpe7Wsg" alt="Foto de nuestro huarache tradicional.">
                     <h3>Huarache Tradicional</h3>
@@ -67,39 +103,35 @@
                     <h3>Huarache Tradicional</h3>
                     <p>$70</p>
                 </div>
-
-                <div class="card">
-                    <img src="https://lh4.googleusercontent.com/proxy/pw6i1wKb-qyD7dFbcRWBLeFbSNpnkeesC1JESwp1CQspEpabH7JmUrb5S05l0Ax_yZJMYY2HqEtU7UonBt0_2JbbsDeF_mj_5vEvaQ9Zx7RezNYpW-qOo1dHpe7Wsg" alt="Foto de nuestro huarache tradicional.">
-                    <h3>Huarache Tradicional</h3>
-                    <p>$70</p>
-                </div>
-
-                <div class="card">
-                    <img src="https://lh4.googleusercontent.com/proxy/pw6i1wKb-qyD7dFbcRWBLeFbSNpnkeesC1JESwp1CQspEpabH7JmUrb5S05l0Ax_yZJMYY2HqEtU7UonBt0_2JbbsDeF_mj_5vEvaQ9Zx7RezNYpW-qOo1dHpe7Wsg" alt="Foto de nuestro huarache tradicional.">
-                    <h3>Huarache Tradicional</h3>
-                    <p>$70</p>
-                </div>
-
-
             </div>
-
         </section>
 
-        <section class="estilo" id="personal">
+        <section class="estilo" id="Componentes">
             <h2>Conoce a los creadores de los huaraches</h2>
             <p>Chefs</p>
         </section>
 
-        <section class="estilo" id="redes-sociales">
+        <section class="estilo" id="Videovigilancia">
+            <h2>Siguenos en nuestras Redes</h2>
+            <p>Obten descuentos por seguirnos</p>
+        </section>
+        
+        <section class="estilo" id="Accesorios">
+            <h2>Siguenos en nuestras Redes</h2>
+            <p>Obten descuentos por seguirnos</p>
+        </section>
+
+        <section class="estilo" id="PuntoVenta">
             <h2>Siguenos en nuestras Redes</h2>
             <p>Obten descuentos por seguirnos</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy 2024 Huaraches Lechuga. Todos los derechos reservados.</p>
-        <p>Ubicación: En tu corazón 🐈‍</p>
+        <p>&copy 2024 Engineering Ware Information Technology </p>
     </footer>
-
+      <!-- Incluye el JS de Swiper -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="/js/carrusel.js"></script>
 </body>
 </html>

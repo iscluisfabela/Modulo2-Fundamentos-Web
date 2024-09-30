@@ -3,28 +3,49 @@
     margin: 0; /*Espacio exterior*/
     padding: 0; /*Espacio interior*/
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 100%;
+    padding: 0px;
 }
 
 /*Selector de tipo etiqueta*/
 body{
-    background-color: rgb(252, 227, 180);
+    background-color: #ffffff;
     font-family: Arial, sans-serif; /*Tipografia*/
     line-height: 1.5; /*Interlineado*/
 }
 
-.contenedor{
-    width: 80%;
-    margin: 0 auto;
-}
-
 header{
-    background-color: rgb(252, 227, 137);
-    color:rgb(240, 156, 1);
     padding: 10px 0;
 }
 
+footer{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: x-small;
+}
+
+
+/*Selectores Id*/
+#logo{
+    display: block; /* No necesitamos flex aquí */
+    position: absolute; /* Para posicionar libremente la imagen */
+    top: 0; /* Alineado a la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    margin: 10px; /* Añadir espacio opcional alrededor del logo */
+    width: 90px; /* Ajustar el tamaño según sea necesario */
+    height: auto; /* Mantener las proporciones de la imagen */
+}
+
+
 /*Selectores avanzados*/
-header h1{
+header h2{
+    color: #4b4848;
     text-align: center;
     justify-content: center;
 }
@@ -50,10 +71,16 @@ nav ul li a:hover {
 }
 
 /*Selector de tipo clase*/
+.contenedor{
+    color:#000000;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .estilo{
     background-color: aliceblue;
     padding: 20px;
-    margin: 20px 0; /* 10px left y rigth, 0 top y bottom*/
+    margin: 30px 0; /* 10px left y rigth, 0 top y bottom*/
     transition: background-color 0.3s ease;
 }
 
@@ -99,11 +126,85 @@ nav ul li a:hover {
     border-top-right-radius: 10px;
 }
 
-footer{
-    background-color: rgb(252, 227, 137);
-    text-align: center;
-    padding: 18px;
+/* Estilo para carrusel*/
+
+.swiper-container {
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    height: 300px; /* Ajusta según el tamaño deseado */
+    background-color: rgb(255, 255, 255); /* Fondo negro para el contenedor del carrusel */
+    position: relative; /* Asegura que los botones de navegación se posicionen correctamente */
+    
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ajusta la altura de cada slide */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    
+    flex-direction: column;
+    
+}
+
+/* Contenedor de cada artículo */
+.article-container {
+    
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: white; /* Color del texto blanco */
+    background: rgb(255, 255, 255); /* Fondo oscuro semitransparente para mejorar la legibilidad */
+    padding: 0px;
+    max-width: 100%; /* Limita el ancho máximo del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+    height: 100%;
+    width: 100%;
+}
+/* Imágenes de fondo para cada slide */
+#CCTV, #POS, #EQC, #PRINTER {
+    background-size: 60% 100%; /* Ajusta las imágenes de fondo al tamaño del slide */
+    background-position: center; /* Centra las imágenes */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    height: 100%; /* Asegura que la imagen cubra toda la altura del contenedor */
+    width: 100%; /* Asegura que la imagen cubra todo el ancho del contenedor */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/* Estilos para los controles de navegación de Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white; /* Color blanco para los botones de navegación */
+}
+
+.swiper-pagination-bullet {
+    background: white; /* Color blanco para los indicadores de la paginación */
+}
+
+/* Imágenes de fondo para cada slide */
+#EQC {
+    background-image: url("/imagenes/Principal/EQC.png");
+    
+}
+
+#POS {
+    background-image: url("/imagenes/Principal/POS.png");
+}
+
+#PRINTER {
+    background-image: url("/imagenes/Principal/PRINTER.png");
+}
+
+#CCTV {
+    background-image: url("/imagenes/Principal/CCTV.png");
+}
+
+/* Estilos para los controles de navegación de Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(255, 255, 255); /* Color blanco para los botones de navegación */
+}
+
+.swiper-pagination-bullet {
+    background: rgb(255, 255, 255); /* Color blanco para los indicadores de la paginación */
 }
